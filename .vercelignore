@@ -1,4 +1,6 @@
 old-website
+old-css
+old-js
 .git
 .gitignore
-README.md
+node_modules

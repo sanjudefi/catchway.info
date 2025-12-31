@@ -3,175 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catchway - Reliable and Advanced Blockchain solutions, Web Development, and App Development services to help you embrace new technology and lead the way.">
-    <meta name="keywords" content="blockchain development, web development, app development, smart contracts, DeFi, cryptocurrency, dApp development">
+    <meta name="description" content="Catchway is an initiative to help blockchain and crypto start-ups create groundbreaking software solutions that impact the world for the better.">
+    <meta name="keywords" content="Blockchain Development Company, Enterprise Services and Solutions Provider, Web Development, App Development, Cryptocurrency, ICO, DeFi, NFT, Smart Contracts">
     <meta name="author" content="Catchway">
-    <meta property="og:title" content="Catchway - Unfold the Future with Blockchain Solutions">
-    <meta property="og:description" content="Reliable and Advanced Blockchain solutions to help you embrace the new technology and lead the way.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://catchway.com">
-    <title>Catchway - Blockchain, Web & App Development Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Catchway - Blockchain Development & Web Solutions</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
-            <div class="logo">
-                <img src="assets/logo.svg" alt="Catchway Logo" onerror="this.style.display='none'">
-                <span class="logo-text">CATCHWAY</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="web-development.html">Web Development</a></li>
-                <li><a href="app-development.html">App Development</a></li>
-                <li><a href="blockchain-services.html">Blockchain Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/catchway%20block%20new%20logo.svg" alt="Catchway Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Web Development
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#web-design">Website Designing</a></li>
+                            <li><a class="dropdown-item" href="#responsive-design">Responsive Website Designing</a></li>
+                            <li><a class="dropdown-item" href="#landing-page">Landing Page Designing</a></li>
+                            <li><a class="dropdown-item" href="#ecommerce">Ecommerce Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#app-development">App Development</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Blockchain Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#crypto-solutions">Cryptocurrency Solutions</a></li>
+                            <li><a class="dropdown-item" href="#ico-dev">ICO Coin Development</a></li>
+                            <li><a class="dropdown-item" href="#sto-dev">STO Coin Development</a></li>
+                            <li><a class="dropdown-item" href="#erc20">ERC20 Token Development</a></li>
+                            <li><a class="dropdown-item" href="#crypto-exchange">Crypto Exchange Development</a></li>
+                            <li><a class="dropdown-item" href="#bep20">BEP20 Token Development</a></li>
+                            <li><a class="dropdown-item" href="#nft">NFT Token Development</a></li>
+                            <li><a class="dropdown-item" href="#tron">Tron Token Development</a></li>
+                            <li><a class="dropdown-item" href="#r3-corda">R3 Corda Blockchain Development</a></li>
+                            <li><a class="dropdown-item" href="#cardano">Cardano Blockchain Development</a></li>
+                            <li><a class="dropdown-item" href="#dashboard">Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Unfold the future with Catchway</h1>
-                <p class="hero-description">Reliable and Advanced Blockchain solutions to help you embrace the new technology and lead the way.</p>
-                <button class="cta-button">JOIN OUR COMMUNITY</button>
-                <div class="social-links">
-                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="hero-image">
+                        <img src="images/header-01.png" alt="Blockchain Technology" class="img-fluid">
+                    </div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <div class="isometric-graphic">
-                    <!-- Decorative elements -->
-                    <div class="floating-element element-1"></div>
-                    <div class="floating-element element-2"></div>
-                    <div class="floating-element element-3"></div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold mb-4">Unfold the future with Catchway</h1>
+                        <p class="lead mb-4">Reliable and Advanced Blockchain solutions to help you embrace the new technology and lead the way.</p>
+                        <p class="text-uppercase fw-semibold mb-3">JOIN OUR COMMUNITY</p>
+                        <div class="social-links mb-4">
+                            <a href="https://telegram.me/Janz_dxb" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+                            <a href="https://www.facebook.com/catchway.io" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/catchway.io/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/catchway-web-solutions-pvt-ltd/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="contact-form-hero">
+                            <h3 class="h5 mb-3">Get in touch with us</h3>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="tel" class="form-control" placeholder="Mobile" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="email" class="form-control" placeholder="E-mail Address" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services">
+    <!-- Blockchain Products Section -->
+    <section class="products-section py-5">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Blockchain Products</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <div class="product-icon mb-3">
+                            <img src="images/benefits1-01.png" alt="ICO Dashboard" class="img-fluid">
+                        </div>
+                        <h5>Automatic/Manual ICO Dashboard</h5>
                     </div>
-                    <h3>Web Development</h3>
-                    <p>Custom web applications built with modern technologies to deliver exceptional user experiences.</p>
-                    <a href="web-development.html" class="service-link">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <div class="product-icon mb-3">
+                            <img src="images/benefits1-02.png" alt="DEX" class="img-fluid">
+                        </div>
+                        <h5>Decentralized Exchange (DEX)</h5>
                     </div>
-                    <h3>App Development</h3>
-                    <p>Native and cross-platform mobile applications that engage users and drive business growth.</p>
-                    <a href="app-development.html" class="service-link">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cubes"></i>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <div class="product-icon mb-3">
+                            <img src="images/benefits1-03.png" alt="Token Migration" class="img-fluid">
+                        </div>
+                        <h5>Token Migration Platform</h5>
                     </div>
-                    <h3>Blockchain Services</h3>
-                    <p>Cutting-edge blockchain solutions, smart contracts, and decentralized applications (dApps).</p>
-                    <a href="blockchain-services.html" class="service-link">Learn More →</a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <div class="product-icon mb-3">
+                            <img src="images/benefits1-04.png" alt="Token Bridge" class="img-fluid">
+                        </div>
+                        <h5>Token Bridge Platform</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <div class="product-icon mb-3">
+                            <img src="images/benefits1-05.png" alt="NFT Marketplace" class="img-fluid">
+                        </div>
+                        <h5>NFT Marketplace</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <div class="product-icon mb-3">
+                            <img src="images/benefits1-06.png" alt="DeFi Lending" class="img-fluid">
+                        </div>
+                        <h5>DeFi Lending Software</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <div class="product-icon mb-3">
+                            <img src="images/benefits1-07.png" alt="Crypto Wallet" class="img-fluid">
+                        </div>
+                        <h5>Crypto Wallet Software</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <div class="product-icon mb-3">
+                            <img src="images/benefits1-08.png" alt="OTC Exchange" class="img-fluid">
+                        </div>
+                        <h5>OTC Exchange Software</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <div class="product-icon mb-3">
+                            <img src="images/benefits1-09.png" alt="Crowdfunding" class="img-fluid">
+                        </div>
+                        <h5>Crowdfunding Software</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card text-center">
+                        <div class="product-icon mb-3">
+                            <img src="images/benefits1-10.png" alt="Penny Auction" class="img-fluid">
+                        </div>
+                        <h5>Crypto Penny Auction Software</h5>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-section">
+    <!-- About Section -->
+    <section id="about" class="about-section py-5 bg-light">
         <div class="container">
-            <h2 class="section-title">Get in touch with us</h2>
-            <form class="contact-form" id="contactForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">About Catchway</h2>
+                    <p class="lead">Catchway is an initiative to help blockchain and crypto start-ups create groundbreaking software solutions that impact the world for the better.</p>
+                    <p>We specialize in blockchain development, web development, and mobile app development services. Our team of experts delivers cutting-edge solutions that drive innovation and business growth.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary">100+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary">50+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary">10+</h3>
+                            <p>Years Experience</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" name="mobile" placeholder="Mobile" required>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold">Contact Us</h2>
+                        <p class="lead">Have a project in mind? Let's discuss how we can help</p>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="5" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="E-mail Address" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" rows="4"></textarea>
-                </div>
-                <button type="submit" class="submit-button">Submit</button>
-            </form>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer py-5 bg-dark text-white">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Catchway</h3>
-                    <p>Leading the way in blockchain, web, and app development solutions.</p>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="images/catchway%20block%20new%20logo.svg" alt="Catchway Logo" height="50" class="mb-3">
+                    <p>Leading blockchain, web, and app development solutions provider.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="web-development.html">Web Development</a></li>
-                        <li><a href="app-development.html">App Development</a></li>
-                        <li><a href="blockchain-services.html">Blockchain Services</a></li>
+                <div class="col-lg-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Home</a></li>
+                        <li><a href="#about" class="text-white-50">About Us</a></li>
+                        <li><a href="#contact" class="text-white-50">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <div class="col-lg-4 mb-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="https://telegram.me/Janz_dxb" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.facebook.com/catchway.io" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/catchway.io/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/catchway-web-solutions-pvt-ltd/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Catchway. All rights reserved.</p>
+            <hr class="bg-white-50">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Catchway. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating Contact Buttons -->
     <div class="floating-buttons">
-        <a href="#" class="float-button whatsapp" aria-label="WhatsApp">
+        <a href="https://api.whatsapp.com/send?phone=971585048744" target="_blank" class="float-btn whatsapp">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="#" class="float-button phone" aria-label="Phone">
+        <a href="tel:+971585048744" class="float-btn phone">
             <i class="fas fa-phone"></i>
         </a>
-        <a href="#" class="float-button telegram" aria-label="Telegram">
+        <a href="https://telegram.me/Janz_dxb" target="_blank" class="float-btn telegram">
             <i class="fab fa-telegram"></i>
         </a>
     </div>
 
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>

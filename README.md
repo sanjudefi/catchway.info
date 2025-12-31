@@ -1,92 +1,117 @@
-# Catchway - Blockchain, Web & App Development
+# Catchway - Pure HTML Website
 
-Modern, SEO-friendly website for Catchway - a technology company specializing in blockchain solutions, web development, and mobile app development.
+Modern, responsive website for Catchway - Blockchain, Web & App Development Solutions.
+
+## Technology Stack
+
+- **Pure HTML5** - No framework, no build process
+- **Bootstrap 5** - Responsive CSS framework
+- **Vanilla JavaScript** - Modern ES6+
+- **Font Awesome** - Icons
 
 ## Features
 
-- **Pure HTML/CSS/JS** - No build process required
-- **SEO Optimized** - Comprehensive meta tags and semantic HTML
-- **Responsive Design** - Mobile-first approach
-- **Modern UI** - Purple/blue gradient color scheme with glassmorphism effects
-- **Fast Loading** - Optimized for performance
-- **Vercel Ready** - Configured for instant deployment
+- ✅ **Pure HTML Website** - No npm build needed
+- ✅ **Bootstrap 5** - Modern responsive design
+- ✅ **Light Blue Theme** - Professional color scheme
+- ✅ **Dropdown Menus** - Web Development & Blockchain Services
+- ✅ **SEO Optimized** - Meta tags and semantic HTML
+- ✅ **Mobile Responsive** - Works on all devices
+- ✅ **Fast Loading** - Optimized assets
+- ✅ **Vercel Ready** - Configured for instant deployment
 
-## Pages
+## Pages & Navigation
 
-- **Home** (`index.html`) - Hero section with services overview and contact form
-- **Web Development** (`web-development.html`) - Web development services and technologies
-- **App Development** (`app-development.html`) - Mobile app development services
-- **Blockchain Services** (`blockchain-services.html`) - Blockchain and Web3 solutions
-- **About Us** (`about.html`) - Company information and values
-- **Contact** (`contact.html`) - Contact form and information
+- **Home** - Hero section with contact form
+- **Web Development** (Dropdown)
+  - Website Designing
+  - Responsive Website Designing
+  - Landing Page Designing
+  - Ecommerce Development
+- **App Development**
+- **Blockchain Services** (Dropdown)
+  - Cryptocurrency Solutions
+  - ICO/STO Development
+  - Token Development (ERC20, BEP20, NFT, Tron)
+  - Crypto Exchange
+  - R3 Corda & Cardano Development
+- **About Us**
+- **Contact**
 
-## Technologies Used
+## Blockchain Products
 
-- HTML5
-- CSS3 (with modern features like backdrop-filter, gradients, animations)
-- Vanilla JavaScript
-- Font Awesome Icons
+- Automatic/Manual ICO Dashboard
+- Decentralized Exchange (DEX)
+- Token Migration Platform
+- Token Bridge Platform
+- NFT Marketplace
+- DeFi Lending Software
+- Crypto Wallet Software
+- OTC Exchange Software
+- Crowdfunding Software
+- Crypto Penny Auction Software
 
-## Deployment
+## Deployment on Vercel
 
-### Vercel (Recommended)
+This is a **pure HTML website** - no build process required!
 
-1. Push your code to GitHub
-2. Import the repository in Vercel
-3. Deploy automatically - no configuration needed!
+### Quick Deploy
 
-The site is configured with `vercel.json` for static HTML hosting.
+1. Push code to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Import repository
+4. Select branch: `claude/redesign-catchway-website-USuSr`
+5. Click **Deploy** (Vercel will automatically detect it's a static HTML site)
 
-### Other Static Hosts
+### Configuration Files
 
-This site can be deployed to any static hosting service:
-- Netlify
-- GitHub Pages
-- Cloudflare Pages
-- AWS S3 + CloudFront
-- Firebase Hosting
+- `vercel.json` - Vercel deployment configuration
+- `package.json` - Project metadata (no dependencies needed)
 
-Simply upload all files to your hosting provider.
+### No Build Needed
+
+The website uses pure HTML/CSS/JS with CDN-hosted Bootstrap 5 and Font Awesome. Simply deploy and it works!
 
 ## Local Development
 
-No build process is required. Simply open `index.html` in your browser or use a local server:
+No installation needed! Just open `index.html` in your browser.
+
+For a local server (optional):
 
 ```bash
 # Using Python
 python -m http.server 8000
 
-# Using Node.js http-server
-npx http-server
-
 # Using PHP
 php -S localhost:8000
+
+# Using Node.js http-server
+npx http-server
 ```
 
-Then visit `http://localhost:8000`
+Then visit: `http://localhost:8000`
 
-## Customization
+## File Structure
 
-### Colors
-
-Edit the CSS variables in `styles.css`:
-
-```css
-:root {
-    --primary-purple: #6B46C1;
-    --primary-blue: #4F46E5;
-    --accent-cyan: #06B6D4;
-    /* ... */
-}
+```
+catchway.info/
+├── index.html           # Main HTML file
+├── styles.css           # Custom CSS (Light blue theme)
+├── script.js            # JavaScript interactions
+├── package.json         # Project metadata
+├── vercel.json          # Vercel configuration
+├── images/              # All images and logo
+├── fonts/               # Font files
+└── old-website/         # Backup of original site
 ```
 
-### Content
+## Color Scheme
 
-All content is in the HTML files. Edit directly to update text, add services, or modify sections.
-
-### Logo
-
-Replace `/assets/logo.svg` with your own logo file.
+- Primary Blue: `#00A8E8`
+- Light Blue: `#66D9EF`
+- Dark Blue: `#007EA7`
+- Accent Cyan: `#00CED1`
+- Gradients: `#4FC3F7` to `#29B6F6`
 
 ## Browser Support
 
@@ -94,11 +119,20 @@ Replace `/assets/logo.svg` with your own logo file.
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
+- Mobile browsers
+
+## Contact & Social
+
+- **Telegram**: https://telegram.me/Janz_dxb
+- **Facebook**: https://www.facebook.com/catchway.io
+- **Instagram**: https://www.instagram.com/catchway.io/
+- **LinkedIn**: https://www.linkedin.com/company/catchway-web-solutions-pvt-ltd/
+- **WhatsApp**: +971585048744
 
 ## License
 
 Copyright © 2024 Catchway. All rights reserved.
 
-## Contact
+---
 
-For inquiries: info@catchway.com
+**Note**: This is a pure HTML website. No npm install, no build step, no dependencies. Just deploy and go! 🚀

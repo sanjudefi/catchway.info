@@ -1,16 +1,9 @@
 {
   "version": 2,
+  "name": "catchway-website",
   "builds": [
     {
-      "src": "**/*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.js",
+      "src": "index.html",
       "use": "@vercel/static"
     }
   ],

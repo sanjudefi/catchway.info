@@ -1,0 +1,19 @@
+{
+  "name": "catchway-website",
+  "version": "1.0.0",
+  "description": "Catchway - Blockchain, Web & App Development Solutions",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'Static HTML - No build needed'"
+  },
+  "keywords": [
+    "blockchain",
+    "web-development",
+    "app-development",
+    "cryptocurrency",
+    "html"
+  ],
+  "author": "Catchway",
+  "license": "MIT"
+}

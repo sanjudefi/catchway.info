@@ -100,6 +100,34 @@
             color: var(--primary-blue) !important;
         }
 
+        /* Dropdown Menu Styles */
+        .dropdown-menu {
+            border: none;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            padding: 15px 0;
+            margin-top: 10px;
+            min-width: 250px;
+        }
+
+        .dropdown-item {
+            padding: 10px 25px;
+            font-size: 15px;
+            color: #333;
+            transition: all 0.3s;
+        }
+
+        .dropdown-item:hover {
+            background: linear-gradient(135deg, #00A8E8 0%, #007EA7 100%);
+            color: white;
+            padding-left: 30px;
+        }
+
+        .dropdown-toggle::after {
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
         /* Hero Section */
         .hero-section {
             background: linear-gradient(135deg, #00A8E8 0%, #007EA7 100%);
@@ -488,7 +516,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#home">
-                <img src="images/catchway-logo.svg" alt="Catchway">
+                <img src="images/catchway block new logo.svg" alt="Catchway">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -496,9 +524,36 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="webDevDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Web Development
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="webDevDropdown">
+                            <a class="dropdown-item" href="#services">Website Designing</a>
+                            <a class="dropdown-item" href="#services">Responsive Website Designing</a>
+                            <a class="dropdown-item" href="#services">Landing Page Designing</a>
+                            <a class="dropdown-item" href="#services">Ecommerce Development</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#services">App Development</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blockchainDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Blockchain Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="blockchainDropdown">
+                            <a class="dropdown-item" href="#products">Cryptocurrency Solutions</a>
+                            <a class="dropdown-item" href="#products">ICO Coin Development</a>
+                            <a class="dropdown-item" href="#products">STO Coin Development</a>
+                            <a class="dropdown-item" href="#products">ERC20 Token Development</a>
+                            <a class="dropdown-item" href="#products">Crypto Exchange Development</a>
+                            <a class="dropdown-item" href="#products">BEP20 Token Development</a>
+                            <a class="dropdown-item" href="#products">NFT Token Development</a>
+                            <a class="dropdown-item" href="#products">Tron Token Development</a>
+                            <a class="dropdown-item" href="#products">R3 Corda Blockchain Development</a>
+                            <a class="dropdown-item" href="#products">Cardano Blockchain Development</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>

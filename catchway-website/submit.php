@@ -1,0 +1,12 @@
+<?php
+alert($_POST['message']);
+    if(isset($_POST['submit']))
+    {
+        $apiToken = "334202346:AAGANdbkRgH9hbKzg83BnzBkHBQ8oumRQl0";
+        $data = [
+            'chat_id' => '-245460383', 
+            'text' => $_POST['message']
+        ];
+        $response = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($data) );    
+    }
+?>

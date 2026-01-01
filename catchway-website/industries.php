@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+
+
+
+<?php $page = "home"; include('header-inner.php'); ?>
+
+
+<section id="about_cryptonic_01">
+    <div class="container">
+        <div class="row intro-wrapper">           
+            <div class="col-sm-12  col-md-12 col-lg-12 intro-text-wrapper">
+                <div class="intro-text text-center">
+                    <h1>Industries</h1>
+                    <!-- <p>Tron token development is your best choice if you want all the functionalities of Ethereum, without the outrageous gas fees.</p> -->
+                    <!-- <a href="#" class="btn btn-default btn-default-style">Join our Whitelist</a> -->
+                </div>
+            </div> 
+        </div>    
+    </div>
+</section>
+<br><br>
+
+<section id="benefit-04">
+
+    <br><br><br>
+    <div class="container">
+        <div class="row justify-content-center">        
+            
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/i-icon1.png" width="60">
+                    <p>Health Care</p>
+                </div>
+            </div>       
+            
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/i-icon2.png" width="60">
+                    <p>Finance/Investment</p>
+                </div>
+            </div>       
+            
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/i-icon3.png" width="60">
+                    <p>Insurance</p>
+                </div>
+            </div>       
+            
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/i-icon4.png" width="60">
+                    <p>Rental</p>
+                </div>
+            </div>      
+            
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/i-icon5.png" width="60">
+                    <p>Supply Chain</p>
+                </div>
+            </div>      
+            
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/i-icon6.png" width="60">
+                    <p>Games Development</p>
+                </div>
+            </div>      
+            
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/i-icon7.png" width="60">
+                    <p>Agriculture</p>
+                </div>
+            </div>      
+            
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/i-icon8.png" width="60">
+                    <p>Retail</p>
+                </div>
+            </div>    
+
+        </div>  
+    </div>
+</section>
+
+<br><br><br>
+
+<?php include('footer.php'); ?>
+
+</body>
+
+</html>

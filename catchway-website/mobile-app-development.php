@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- required meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- #favicon -->
+    <link rel="shortcut icon" href="services/images/favicon.png" type="image/x-icon">
+    <!-- #title -->
+    <title>Mobile App Development - Catchway Web Development</title>
+    <!-- #keywords -->
+    <meta name="keywords" content="Mobile App Development, Catchway Mobile App Development, Catchway">
+    <!-- #description -->
+    <meta name="description" content="Blockchain Development in Helsinki. Catchway is a completely bootstrapped blockchain based software development company with a track record of excellence since 2008 and 5 years of Global Leadership in the Blockchain domain.">
+    <link rel="canonical" href="https://www.catchway.com/blockchain-development-in-Helsinki" />
+    <meta name="robots" content="index, follow">
+    <!-- #author -->
+    <meta name="author" content="Catchway">
+
+<!-- ==== css dependencies start ==== -->
+
+<?php include('seo-css.php'); ?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWFBFS9Y0R">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZWFBFS9Y0R');
+</script>
+</head>
+
+<body class="body_01" onload="showPath();">
+
+<!-- ==== header start ==== -->
+<?php $page = "home"; include('seo-header.php'); ?>
+<!-- ==== #header end ==== -->
+
+    <!-- ==== hero section start ==== -->
+    <section class="hero bg__img" data-background="./assets/services/images/hero/hero-bg.png">
+        <div class="container">
+            <div class="hero-area">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="hero-area__content wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                            <h1>Mobile App Development</h1>
+                            <p class="primary" style="margin-bottom: 50px;">We build end to end techology solutions</p>
+                            
+                            <!-- <div class="hero-area__content-btn-group">
+                                <a href="#">
+                                    <img src="services/images/app-store.png" alt="App Store">
+                                </a>
+                                <a href="#">
+                                    <img src="services/images/play-store.png" alt="Play Store">
+                                </a>
+                            </div> -->
+                            <?php include('form.php'); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <img src="services/images/websitedesigning.png" alt="Hero Illustration" class="hero-animation__illustration d-none d-lg-block img-fluid" width="500">
+            <img src="services/images/ring.png" alt="Ring" class="hero-animation__big-ring d-none d-md-block">
+            <img src="services/images/small-ring.png" alt="Ring" class="hero-animation__small-ring d-none d-md-block">
+            <img src="services/images/space-ship.png" alt="Spaceship" class="hero-animation__space-ship d-none d-md-block">
+        </div>
+    </section>
+    <!-- ==== #hero section end ==== -->
+    
+    
+    
+    
+    <style>
+        .left-img img {
+            max-width: 100px;
+            height: auto;
+            max-height: 100px;
+            /*float: left;*/
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .left-img h3 {
+            font-size: 20px;
+            margin-bottom: 0px;
+            color: #f6c033;
+        }
+        .left-img p {
+            margin-top: 6px;
+        }
+        .easy-area__content-single__inner-item {
+            display: flex;
+            flex-direction: row;
+        }
+        @media only screen and (max-width: 575px) {
+            .left-img img {
+                max-width: 100px;
+                height: auto;
+                max-height: 100px;
+                float: none;
+                margin-right: 0px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            
+            .left-img h3 {
+                text-align: center;
+            }
+            .easy-area__content-single__inner-item {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+        }
+    </style>
+    
+    
+    
+
+    <!-- ==== easy section start ==== -->
+    <section class="easy section__space pos__rel over__hi left-img" id="about">
+        <div class="container">
+            <div class="easy-area">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-12">
+                        <div class="easy-area__content-title">
+                            <!--<h2>Mobile App Development</h2>-->
+                            <!--<h4>The Way forward for Business to grow</h4>-->
+                            <p>Welcome to our website, your gateway to top-notch mobile app development services. In today's mobile-driven world, having a powerful and user-friendly mobile application is vital for businesses to engage their audience, boost brand visibility, and drive growth. Our expert team of developers is here to turn your app idea into a reality.<br><br></p>
+                            <h4>Why choose our mobile app development services?<br><br></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/customization.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>Customized Solutions</h3> 
+                                        <p>We understand that each app idea is unique. Our developers take the time to understand your vision and goals, creating tailored solutions that meet your specific requirements. Whether you need a native iOS, Android, or cross-platform app, we've got you covered.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/ux.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>User-Centric Design</h3> 
+                                        <p>User experience is at the core of our app development process. We craft intuitive, visually appealing interfaces that make navigation seamless and enhance user engagement. Our designs prioritize usability and conversion, ensuring your app delights users and drives desired actions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/edge-computing.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>Cutting-Edge Technologies</h3> 
+                                        <p>We stay up-to-date with the latest trends and technologies in mobile app development. Our team leverages industry-leading tools, frameworks, and languages to build robust and scalable apps that deliver exceptional performance across devices.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/scrum.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>Agile Development Methodology</h3> 
+                                        <p>Our development process follows agile methodologies, ensuring transparency, flexibility, and continuous collaboration. We provide regular updates and opportunities for feedback, so you're involved every step of the way.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/enlarge.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>Integration and Scalability</h3> 
+                                        <p>We integrate your app with various third-party services, such as social media platforms, payment gateways, and analytics tools, to enhance functionality and provide a seamless user experience. Our scalable architecture allows your app to grow alongside your business.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/certificate.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>Rigorous Testing and Quality Assurance</h3>
+                                        <p>We have a dedicated team of QA specialists who conduct rigorous testing to identify and fix any bugs or issues. We perform comprehensive testing across devices, screen sizes, and operating systems to ensure your app functions flawlessly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/app-store.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>App Store Deployment Support</h3> 
+                                        <p>We assist you in navigating the app submission process, whether it's for Apple's App Store or the Google Play Store. We help you meet the guidelines and ensure a smooth submission and approval process.<br><br><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/customer-service (1).png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>Ongoing Maintenance and Support</h3>
+                                        <p>Our commitment extends beyond development. We provide ongoing maintenance and support services, ensuring your app remains secure, up-to-date, and optimized for performance. Our team is available to address any concerns and implement necessary updates.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p><br><br>Don't miss out on the immense opportunities that mobile apps offer. Partner with us to transform your app idea into a reality. Contact us today to discuss your mobile app development needs, and let us create a cutting-edge solution that elevates your business in the digital landscape.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ==== #easy section end ==== -->
+    
+
+    <!-- ==== crypto section start ==== -->
+    <section class="community secure cashback section__space pos__rel over__hi wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+        <div class="container">
+            <div class="easy-area">
+                <div class="wallet-area__header">
+                    <h2>Our Servicess</h2>
+                </div>
+                <div class="row d-flex mb-30">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/mobile-app-dev.avif" alt="Shop">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Mobile App Development</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/web-dev.webp" alt="Convert">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Web Development</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/graphicdesign.webp" alt="Unique Crypto 
+                                Cashback">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Graphic Designing</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/dm.jpeg" alt="Shop">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Digital Marketing</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex mb-30 justify-content-center">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/Social-media.avif" alt="Shop">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Social Media Marketing</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/seo.jpg" alt="Convert">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Search Engine Optimization</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    <!-- ==== #crypto section end ==== -->
+
+    <section class="easy secure section__space pos__rel over__hi">
+        <div class="container">
+            <div class="easy-area">
+                <div class="wallet-area__header">
+                    <h2>Industries</h2>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-4">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/education.png" alt="Sell Cryptocurrency">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Education</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/return-on-investment.png" alt="Hold Cryptocurrency">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Finance & Investments</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/save-money.png" alt="Send">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Banking</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/mental-health.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Healthcare</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/house.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Real Estate</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/shopping.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Ecommerce & Retail</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/warehouse.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Logistics & Supply Chain</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/conversation.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Consultancy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="easy-area__thumb thumb__ltr d-none d-lg-block">
+                            <img src="services/images/industries.png" alt="Secure Illustration" class="wow animate__ animate__fadeInUp animated" data-wow-duration="0.4s" style="visibility: visible; animation-duration: 0.4s; animation-name: fadeInUp;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community secure section__space pos__rel over__hi">
+        <div class="container">
+            <div class="easy-area">
+                <div class="wallet-area__header">
+                    <h2>Technologies</h2>
+                    <p>That We Work On</p>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-4">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/python.png" alt="Sell Cryptocurrency">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Python</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/sql-file.png" alt="Hold Cryptocurrency">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>SQL</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/angular.png" alt="Send">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Angular JS</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/React.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>React JS</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/Vue.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Vue JS</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/rasa.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>RASA</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="easy-area__thumb thumb__ltr d-none d-lg-block">
+                            <img src="services/images/Software-IT-Services-PNG-Clipart.png" alt="Secure Illustration" class="wow animate__ animate__fadeInUp animated" data-wow-duration="0.4s" style="visibility: visible; animation-duration: 0.4s; animation-name: fadeInUp;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <?php include('hyderabad-footer.php'); ?>
+
+    <?php include('seo-js.php'); ?>
+
+</body>
+
+</html>

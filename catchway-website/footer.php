@@ -1,0 +1,160 @@
+<footer id="footer-04" class="footer">
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="col-sd-12 col-md-5 col-lg-4">
+                <ul class="social-items list-unstyled">
+                    <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInUp;"><a href="https://www.facebook.com/catchway.io" target="_blank"><i class="fab fa-facebook-f fb-icon"></i></a></li>
+                    <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeInUp;"><a href="https://www.instagram.com/catchway.io/" target="_blank"><i class="fab fa-instagram instagram-icon"></i></a></li>                    
+                    <!--<li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.4s; animation-name: fadeInUp;"><a href="#"><i class="fab fa-twitter twitt-icon"></i></a></li>-->
+                    <!--li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeInUp;"><a href="#"><i class="fab fa-youtube youtube-icon"></i></a></li-->
+                </ul>
+                <br><br>
+                <div class="address-single wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                    <i class="fa fa-envelope fb-icon"></i>
+                    <div class="address_wrapper">
+                        <h4>E-Mail</h4>
+                        <span>info@catchway.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sd-12 col-md-6 col-lg-6">
+                <?php include('contact-form.php'); ?>
+                <!--div class="address-single wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <i class="fa fa-phone fb-icon"></i>
+                    <div class="address_wrapper">
+                        <h4>Call Us</h4>
+                        <span>+971 5850 487 44</span>
+                    </div>
+                </div-->
+            </div>                                          
+        </div>
+        <div class="row footer-btm-wrapper">
+            <div class="col-sm-6 col-md-6 col-lg-10 footer-single-col">
+                <h3 class="subtitle_1">&nbsp;<img src="images/catchway block new logo.svg" width="180" alt=""></h3>
+                <p>Catchway Blockchain is a leading Blockchain Development Company that has a team of expert Blockchain developers who have tremendous knowledge and experience with Solidity, Hyperledger, Tron, Corda, Hedera development, and all the branches of Blockchain Technology.</p>
+                <br>
+                <p class="text-light">JOIN OUR COMMUNITY</p>
+                <?php include('banner-social.php'); ?>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 footer-single-col">
+                <h3 class="subtitle_1">Company</h3> 
+                <ul class="list-unstyled">
+                    <li><a href="#">About Company</a></li>
+                    <li><a href="products">Products</a></li>
+                    <li><a href="terms-and-conditions">Terms & Conditions</a></li>
+                    <li><a href="privacy-policy">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!--div class="col-sm-6 col-md-6 col-lg-2 footer-single-col">
+                <h3 class="subtitle_1">Help Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#">We Work On</a></li>
+                    <li><a href="#">Showcase</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Features</a></li>
+                </ul>
+            </div-->
+        </div>
+
+        <div class="copyright">
+            <p> Copyright © 2023, Catchway Blockchain</p>            
+        </div>         
+    </div>      
+</footer>
+
+
+
+<!--<a href="https://api.whatsapp.com/send?phone=358417945831" target="_blank" class="foot-whatsapp"><img src="images/icon_whatsapp-1.png" /></a>-->
+<!--<a href="tel:358417945831" class="foot-call"><img src="images/icon_call-1.png" /></a>-->
+<!--<a href="https://telegram.me/catchway" target="_blank" class="foot-telegram"><img src="images/icon_telegram-1.png" /></a>-->
+
+    <a href="https://api.whatsapp.com/send?phone=7304675684" target="_blank" class="foot-whatsapp1"><img src="services/images/icon_whatsapp-1.png" /></a>
+    <!--a href="https://api.whatsapp.com/send?phone=919391142967" target="_blank" class="foot-whatsapp1"><img src="services/images/icon_whatsapp-1.png" /></a-->
+        <a href="https://t.me/sanjumuddam" target="_blank" class="foot-telegram"><img src="images/icon_telegram-1.png"></a>
+
+    <a href="tel:+917304675684" class="foot-call"><img src="services/images/icon_call-1.png" /></a>
+    <style>
+        .foot-telegram {
+            position: fixed;
+            bottom: 200px;
+            left: -12px;
+            z-index: 999;
+        }
+        .foot-whatsapp1 {
+            position: fixed;
+            bottom: 300px;
+            left: -12px;
+            z-index: 999;
+        }
+        .foot-call {
+            position: fixed;
+            bottom: 250px;
+            left: -12px;
+            z-index: 999;
+        }
+        .foot-telegram img {
+            height: 50px;
+            border-radius: 0 0px 10px 0;
+        }
+        .foot-call img {
+            height: 50px;
+            border-radius: 0 0px 0px 0; 
+        }
+        .foot-whatsapp1 img {
+            height: 50px;
+            border-radius: 0 0px 0px 0; 
+        }
+        .foot-call:hover {
+            left: 0px;
+        }
+        .foot-whatsapp1:hover {
+            left: 0px;
+        }
+        .foot-telegram:hover {
+            left: 0px;
+        }
+    </style>
+
+
+
+    <!-- JavaScript Files-->
+    <script src="js/assets/jquery-3.2.1.min.js"></script>
+    <script src="js/assets/popper.min.js"></script>
+    <script src="js/assets/bootstrap.min.js"></script>
+    <script src="js/assets/jquery.sticky.js"></script>
+    <script src="js/assets/isotope.pkgd.min.js"></script>
+    <script src="js/assets/jquery.magnific-popup.min.js"></script>
+    <script src="js/assets/owl.carousel.min.js"></script>     
+    <script src="js/assets/smooth-scroll.js"></script>    
+    <script src="js/assets/jquery.countdown.js"></script>
+    <script src="js/assets/wow.min.js"></script>  
+    <script src="js/custom.js"></script> 
+    <script src="https://kit.fontawesome.com/5c6090995e.js" crossorigin="anonymous"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/609395f9b1d5182476b62597/1f5083mfl';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89536754-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89536754-1');
+</script>
+

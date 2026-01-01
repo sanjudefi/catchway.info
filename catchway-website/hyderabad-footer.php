@@ -1,0 +1,86 @@
+
+
+    
+    
+    
+  <style>
+      .dark-bg .card {
+        background: transparent;
+        border: 0;
+      }
+  </style>
+  
+  
+    <!-- ==== footer section start ==== -->
+    <footer class="footer section__space__bottom">
+        <div class="container">
+            <div class="footer-area">
+                <div class="">
+                    <div class="footer__credit">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-12 text-center">
+                                <div class="footer__credit__left text-center">
+                                    <p class="text-center text-lg-center">
+                                        Copyright © 2023. All Rights Reserved By <a href="https://catchway.com/">Catchway</a>
+                                        <!--br> &emsp; <a href="tel:+358417945831">+91 84998 22444</a-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ==== #footer section end ==== -->
+
+    <!-- Scroll To Top -->
+    <a href="javascript:void(0)" class="scrollToTop">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+    <a href="https://api.whatsapp.com/send?phone=8499822444" target="_blank" class="foot-whatsapp"><img src="services/images/icon_whatsapp-1.png" /></a>
+    <a href="https://api.whatsapp.com/send?phone=919391142967" target="_blank" class="foot-whatsapp1"><img src="services/images/icon_whatsapp-1.png" /></a>
+    <a href="tel:+918499822444" class="foot-call"><img src="services/images/icon_call-1.png" /></a>
+    <a href="https://t.me/sanjumuddam" target="_blank" class="foot-telegram"><img src="images/icon_telegram-1.png"></a>
+    <style>
+        .foot-telegram {
+            position: fixed;
+            bottom: 200px;
+            left: -12px;
+            z-index: 999;
+        }
+        .foot-whatsapp1 {
+            position: fixed;
+            bottom: 300px;
+            left: -12px;
+            z-index: 999;
+        }
+        .foot-call {
+            position: fixed;
+            bottom: 250px;
+            left: -12px;
+            z-index: 999;
+        }
+        .foot-telegram img {
+            height: 50px;
+            border-radius: 0 0px 10px 0;
+        }
+        .foot-call img {
+            height: 50px;
+            border-radius: 0 0px 0px 0; 
+        }
+        .foot-whatsapp1 img {
+            height: 50px;
+            border-radius: 0 0px 0px 0; 
+        }
+        .foot-call:hover {
+            left: 0px;
+        }
+        .foot-whatsapp1:hover {
+            left: 0px;
+        }
+        .foot-telegram:hover {
+            left: 0px;
+        }
+    </style>

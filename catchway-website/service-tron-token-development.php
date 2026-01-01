@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+
+
+
+<?php $page = "home"; include('header-inner.php'); ?>
+
+
+<section id="about_cryptonic_01">
+    <div class="container">
+        <div class="row intro-wrapper">           
+            <div class="col-sm-12  col-md-12 col-lg-12 intro-text-wrapper">
+                <div class="intro-text text-center">
+                    <h1>Tron Token Development</h1>
+                    <p>Tron token development is your best choice if you want all the functionalities of Ethereum, without the outrageous gas fees.</p>
+                    <!-- <a href="#" class="btn btn-default btn-default-style">Join our Whitelist</a> -->
+                </div>
+            </div> 
+        </div>    
+    </div>
+</section>
+
+
+
+<section id="" >
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-12 col-lg-12 benefits-single-item text-center">
+                <h2>Types of Tron Token Development</h2><br><br>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/feature-11.png" width="60">
+                    <p>TRC10</p>
+                </div>
+            </div> 
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/feature-11.png" width="60">
+                    <p>TRC20</p>
+                </div>
+            </div> 
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/feature-11.png" width="60">
+                    <p>TRC721</p>
+                </div>
+            </div> 
+            
+        </div>    
+    </div>
+</section>
+<br><br>
+
+
+
+<section id="benefit-04">
+    <div class="container">
+        <div class="row">        
+            <div class="col-sm-12">
+                <div class="sub-title">
+                    <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInUp;">What we offer ?</h2>
+                </div>
+            </div>
+        </div>      
+        <div class="row">        
+            
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/trc-icon1.png" width="60">
+                    <p>Fast Deployment </p>
+                </div>
+            </div>       
+            
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/trc-icon2.png" width="60">
+                    <p>Interoperability</p>
+                </div>
+            </div>       
+            
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/trc-icon3.png" width="60">
+                    <p>Non Fungible Tokens</p>
+                </div>
+            </div>       
+            
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/trc-icon4.png" width="60">
+                    <p>Solidity Smart Contracts</p>
+                </div>
+            </div>  
+
+        </div>  
+    </div>
+</section>
+
+<br><br><br>
+
+<?php include('footer.php'); ?>
+
+</body>
+
+</html>

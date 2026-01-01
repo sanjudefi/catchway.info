@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- required meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- #favicon -->
+    <link rel="shortcut icon" href="services/images/favicon.png" type="image/x-icon">
+    <!-- #title -->
+    <title>Responsive Website Designing - Catchway Web Development</title>
+    <!-- #keywords -->
+    <meta name="keywords" content="Responsive Website Designing, Catchway Responsive Website Designing, Catchway">
+    <!-- #description -->
+    <meta name="description" content="Blockchain Development in Helsinki. Catchway is a completely bootstrapped blockchain based software development company with a track record of excellence since 2008 and 5 years of Global Leadership in the Blockchain domain.">
+    <link rel="canonical" href="https://www.catchway.com/blockchain-development-in-Helsinki" />
+    <meta name="robots" content="index, follow">
+    <!-- #author -->
+    <meta name="author" content="Catchway">
+
+<!-- ==== css dependencies start ==== -->
+
+<?php include('seo-css.php'); ?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWFBFS9Y0R">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZWFBFS9Y0R');
+</script>
+</head>
+
+<body class="body_01" onload="showPath();">
+
+<!-- ==== header start ==== -->
+<?php $page = "home"; include('seo-header.php'); ?>
+<!-- ==== #header end ==== -->
+
+    <!-- ==== hero section start ==== -->
+    <section class="hero bg__img" data-background="./assets/services/images/hero/hero-bg.png">
+        <div class="container">
+            <div class="hero-area">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="hero-area__content wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                            <h1>Responsive Website Designing</h1>
+                            <p class="primary" style="margin-bottom: 50px;">We build end to end techology solutions</p>
+                            
+                            <!-- <div class="hero-area__content-btn-group">
+                                <a href="#">
+                                    <img src="services/images/app-store.png" alt="App Store">
+                                </a>
+                                <a href="#">
+                                    <img src="services/images/play-store.png" alt="Play Store">
+                                </a>
+                            </div> -->
+                            <?php include('form.php'); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <img src="services/images/websitedesigning.png" alt="Hero Illustration" class="hero-animation__illustration d-none d-lg-block img-fluid" width="500">
+            <img src="services/images/ring.png" alt="Ring" class="hero-animation__big-ring d-none d-md-block">
+            <img src="services/images/small-ring.png" alt="Ring" class="hero-animation__small-ring d-none d-md-block">
+            <img src="services/images/space-ship.png" alt="Spaceship" class="hero-animation__space-ship d-none d-md-block">
+        </div>
+    </section>
+    <!-- ==== #hero section end ==== -->
+    
+    
+    
+    
+    <style>
+        .left-img img {
+            max-width: 100px;
+            height: auto;
+            max-height: 100px;
+            /*float: left;*/
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .left-img h3 {
+            font-size: 20px;
+            margin-bottom: 0px;
+            color: #f6c033;
+        }
+        .left-img p {
+            margin-top: 6px;
+        }
+        .easy-area__content-single__inner-item {
+            display: flex;
+            flex-direction: row;
+        }
+        @media only screen and (max-width: 575px) {
+            .left-img img {
+                max-width: 100px;
+                height: auto;
+                max-height: 100px;
+                float: none;
+                margin-right: 0px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            
+            .left-img h3 {
+                text-align: center;
+            }
+            .easy-area__content-single__inner-item {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+        }
+    </style>
+
+    <!-- ==== easy section start ==== -->
+    <section class="easy section__space pos__rel over__hi left-img" id="about">
+        <div class="container">
+            <div class="easy-area">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-12">
+                        <div class="easy-area__content-title">
+                            <!--<h2>Web Designing</h2>-->
+                            <!--<h4>The Way forward for Business to grow</h4>-->
+                            <p>Welcome to our website! We specialize in creating responsive website designs that adapt seamlessly to various devices, ensuring an optimal user experience for your visitors. With the proliferation of smartphones, tablets, and different screen sizes, having a responsive website is essential to reach and engage your target audience effectively.<br><br></p>
+                            
+                            <p>Our team of skilled designers and developers understands the importance of responsive design in today's digital landscape. We follow industry best practices and leverage the latest technologies to craft websites that look stunning and perform flawlessly across desktops, laptops, tablets, and mobile devices.<br><br></p>
+                            
+                            <h4>Here's what sets our responsive website designing services apart:</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/decision-making.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>User-Centric Approach</h3> 
+                                        <p>We prioritize user experience throughout the design process. By creating intuitive and user-friendly interfaces, we ensure that visitors can navigate your website effortlessly, regardless of the device they are using.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/digital-strategy.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>Mobile-First Strategy</h3>
+                                        <p>With the majority of internet users accessing websites through mobile devices, we adopt a mobile-first approach. This means designing and optimizing your website specifically for mobile devices, delivering a fast, seamless, and engaging experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/brand.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3> Consistent Branding</h3> 
+                                        <p>We understand the importance of maintaining a consistent brand identity across all platforms. Our responsive designs preserve your brand elements, including colors, typography, and imagery, while adapting them to fit different screen sizes and resolutions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/monitoring.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>Improved SEO Performance</h3>
+                                        <p>Responsive websites are favored by search engines like Google, as they provide a better user experience and reduce the need for duplicate content. Our designs are optimized for search engines, helping you improve your website's visibility and rankings.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/problem-solving.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>Future-Proof Solutions</h3> 
+                                        <p>We build websites with scalability and flexibility in mind. Our responsive designs are future-proof, adapting to new devices and technologies seamlessly. This ensures that your website remains relevant and functional as the digital landscape evolves.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/analysis.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>Analytics and Tracking</h3> 
+                                        <p>We integrate robust analytics and tracking tools into your responsive website, providing valuable insights into user behavior, demographics, and conversion rates. This data empowers you to make informed decisions and optimize your online presence.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <img src="services/images/technical-support.png" alt="Easy Illustration" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+                                        <div>
+                                        <h3>Ongoing Support</h3> 
+                                        <p>Our commitment to your success extends beyond the design phase. We provide ongoing support and maintenance services, ensuring that your responsive website stays up to date, secure, and fully optimized.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p><br><br>Whether you're looking to revamp your existing website or create a brand new online presence, our responsive website designing services are tailored to meet your specific needs. Contact us today to discuss how we can transform your business with a stunning, user-friendly, and responsive website design.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ==== #easy section end ==== -->
+    
+
+    <!-- ==== crypto section start ==== -->
+    <section class="community secure cashback section__space pos__rel over__hi wow animate__animated animate__fadeInUp" data-wow-duration="0.4s">
+        <div class="container">
+            <div class="easy-area">
+                <div class="wallet-area__header">
+                    <h2>Our Servicess</h2>
+                </div>
+                <div class="row d-flex mb-30">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/mobile-app-dev.avif" alt="Shop">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Mobile App Development</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/web-dev.webp" alt="Convert">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Web Development</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/graphicdesign.webp" alt="Unique Crypto 
+                                Cashback">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Graphic Designing</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/dm.jpeg" alt="Shop">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Digital Marketing</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex mb-30 justify-content-center">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/Social-media.avif" alt="Shop">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Social Media Marketing</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="easy-area__content-single__inner">
+                            <img src="services/images/seo.jpg" alt="Convert">
+                            <div class="easy-area__content-single__inner-item">
+                                <h6>Search Engine Optimization</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    <!-- ==== #crypto section end ==== -->
+
+    <section class="easy secure section__space pos__rel over__hi">
+        <div class="container">
+            <div class="easy-area">
+                <div class="wallet-area__header">
+                    <h2>Industries</h2>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-4">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/education.png" alt="Sell Cryptocurrency">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Education</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/return-on-investment.png" alt="Hold Cryptocurrency">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Finance & Investments</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/save-money.png" alt="Send">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Banking</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/mental-health.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Healthcare</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/house.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Real Estate</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/shopping.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Ecommerce & Retail</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/warehouse.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Logistics & Supply Chain</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/conversation.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Consultancy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="easy-area__thumb thumb__ltr d-none d-lg-block">
+                            <img src="services/images/industries.png" alt="Secure Illustration" class="wow animate__ animate__fadeInUp animated" data-wow-duration="0.4s" style="visibility: visible; animation-duration: 0.4s; animation-name: fadeInUp;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community secure section__space pos__rel over__hi">
+        <div class="container">
+            <div class="easy-area">
+                <div class="wallet-area__header">
+                    <h2>Technologies</h2>
+                    <p>That We Work On</p>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-4">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/python.png" alt="Sell Cryptocurrency">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Python</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/sql-file.png" alt="Hold Cryptocurrency">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>SQL</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/angular.png" alt="Send">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Angular JS</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="easy-area__content">
+                            <div class="easy-area__content-single">
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/React.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>React JS</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/Vue.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>Vue JS</h6>
+                                    </div>
+                                </div>
+                                <div class="easy-area__content-single__inner">
+                                    <img src="services/images/rasa.png" alt="Pay">
+                                    <div class="easy-area__content-single__inner-item">
+                                        <h6>RASA</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="easy-area__thumb thumb__ltr d-none d-lg-block">
+                            <img src="services/images/Software-IT-Services-PNG-Clipart.png" alt="Secure Illustration" class="wow animate__ animate__fadeInUp animated" data-wow-duration="0.4s" style="visibility: visible; animation-duration: 0.4s; animation-name: fadeInUp;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <?php include('hyderabad-footer.php'); ?>
+
+    <?php include('seo-js.php'); ?>
+
+</body>
+
+</html>

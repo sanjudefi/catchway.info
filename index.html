@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catchway is an initiative to help blockchain and crypto start-ups create groundbreaking software solutions that impact the world for the better.">
-    <meta name="keywords" content="Blockchain Development Company, Enterprise Services and Solutions Provider, Web Development, App Development, AI Development, Blockchain, NFT, DeFi, Smart Contracts">
+    <meta name="description" content="Catchway - Blockchain Development Company providing Web Development, App Development, Blockchain Solutions, and AI Development services.">
+    <meta name="keywords" content="Blockchain Development, Web Development, App Development, AI Development, ICO, NFT, DeFi, Smart Contracts">
     <title>Catchway - Blockchain Development Company</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="catchway-website/images/favicon.png" type="image/png">
+    <link rel="icon" href="old-website/images/Flaticon.svg" type="image/svg+xml">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="old-website/css/bootstrap.min.css">
 
-    <!-- Old Website CSS Files -->
-    <link rel="stylesheet" href="catchway-website/css/assets/bootstrap.min.css">
-    <link rel="stylesheet" href="catchway-website/css/cryptonio.css">
-    <link rel="stylesheet" href="catchway-website/css/assets/animate.css">
-    <link rel="stylesheet" href="catchway-website/css/style.css">
-    <link rel="stylesheet" href="catchway-website/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="old-website/css/style.css">
 
-    <!-- Font Awesome 6 -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Custom Modern Styles -->
-    <style>
-        :root {
-            --primary: #00A8E8;
-            --secondary: #66D9EF;
-            --dark: #0A1628;
-            --light: #F8FAFC;
-            --gradient: linear-gradient(135deg, #00A8E8 0%, #66D9EF 100%);
-        }
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
 
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -43,335 +32,246 @@
         body {
             font-family: 'Poppins', sans-serif;
             color: #333;
-            overflow-x: hidden;
+            line-height: 1.6;
         }
 
-        /* Modern Navbar Enhancements */
+        /* Navbar */
         .navbar {
-            padding: 1.5rem 0;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s;
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         .navbar-brand img {
             height: 50px;
-            transition: transform 0.3s;
         }
 
-        .navbar-brand:hover img {
-            transform: scale(1.05);
+        .navbar-nav li {
+            margin: 0 15px;
         }
 
-        .navbar .nav-link {
+        .navbar-nav a {
+            color: #333;
             font-weight: 500;
-            color: #333 !important;
-            margin: 0 1rem;
-            transition: all 0.3s;
-            position: relative;
-            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            transition: color 0.3s;
         }
 
-        .navbar .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 2px;
-            background: var(--gradient);
-            transition: width 0.3s;
+        .navbar-nav a:hover {
+            color: #00A8E8;
         }
 
-        .navbar .nav-link:hover::after,
-        .navbar .nav-link.active::after {
-            width: 100%;
-        }
-
-        /* Modern Hero Section */
+        /* Hero Section */
         .hero-section {
-            min-height: 100vh;
             background: linear-gradient(135deg, #00A8E8 0%, #007EA7 100%);
-            position: relative;
-            overflow: hidden;
+            min-height: 100vh;
             display: flex;
             align-items: center;
-            padding: 120px 0 80px;
-        }
-
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.05" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
+            padding: 100px 0 60px;
             color: white;
         }
 
         .hero-section h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-            color: white;
-            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
         }
 
-        .hero-section p.lead {
-            font-size: 1.25rem;
-            margin-bottom: 2.5rem;
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
             opacity: 0.95;
-            color: white;
-            font-family: 'Open Sans', sans-serif;
         }
 
-        .btn-hero-primary {
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .btn-primary {
             background: white;
             color: #00A8E8;
-            padding: 1rem 2.5rem;
-            border: none;
+            padding: 12px 35px;
             border-radius: 50px;
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            display: inline-block;
             text-decoration: none;
-            font-family: 'Poppins', sans-serif;
+            display: inline-block;
+            margin-right: 15px;
+            transition: all 0.3s;
         }
 
-        .btn-hero-primary:hover {
+        .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             color: #00A8E8;
             text-decoration: none;
         }
 
-        .btn-hero-outline {
+        .btn-outline {
             border: 2px solid white;
             color: white;
-            padding: 1rem 2.5rem;
+            padding: 12px 35px;
             border-radius: 50px;
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s;
-            display: inline-block;
             text-decoration: none;
-            font-family: 'Poppins', sans-serif;
+            display: inline-block;
+            transition: all 0.3s;
         }
 
-        .btn-hero-outline:hover {
+        .btn-outline:hover {
             background: white;
             color: #00A8E8;
-            transform: translateY(-3px);
             text-decoration: none;
-        }
-
-        .hero-image {
-            position: relative;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
         }
 
         /* About Section */
         .about-section {
-            padding: 100px 0;
+            padding: 80px 0;
             background: white;
         }
 
         .about-section h2 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 700;
             text-align: center;
-            margin-bottom: 1.5rem;
-            color: var(--dark);
-            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
+            color: #0A1628;
         }
 
         .about-section p {
             text-align: center;
             font-size: 1.1rem;
             color: #666;
-            line-height: 1.8;
             max-width: 900px;
-            margin: 0 auto 2rem;
-            font-family: 'Open Sans', sans-serif;
+            margin: 0 auto;
+            line-height: 1.8;
         }
 
         /* Services Section */
         .services-section {
-            padding: 100px 0;
-            background: #F8FAFC;
+            padding: 80px 0;
+            background: #f8f9fa;
         }
 
         .section-title {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 700;
             text-align: center;
-            margin-bottom: 1rem;
-            color: var(--dark);
-            font-family: 'Poppins', sans-serif;
+            margin-bottom: 15px;
+            color: #0A1628;
         }
 
         .section-subtitle {
             text-align: center;
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             color: #666;
-            margin-bottom: 4rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 50px;
         }
 
         .service-card {
             background: white;
-            border-radius: 20px;
-            padding: 3rem 2rem;
+            padding: 40px 30px;
+            border-radius: 15px;
             text-align: center;
-            height: 100%;
-            transition: all 0.4s;
-            border: 1px solid #e8e8e8;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--gradient);
-            transform: scaleX(0);
-            transition: transform 0.4s;
-        }
-
-        .service-card:hover::before {
-            transform: scaleX(1);
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            border: 1px solid #e0e0e0;
         }
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0, 168, 232, 0.15);
-            border-color: transparent;
+            box-shadow: 0 15px 40px rgba(0,168,232,0.15);
+            border-color: #00A8E8;
         }
 
         .service-icon {
-            width: 85px;
-            height: 85px;
-            margin: 0 auto 2rem;
-            background: var(--gradient);
-            border-radius: 20px;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #00A8E8, #66D9EF);
+            border-radius: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.8rem;
+            margin: 0 auto 25px;
+            font-size: 2.5rem;
             color: white;
-            transition: transform 0.4s;
-        }
-
-        .service-card:hover .service-icon {
-            transform: scale(1.1) rotate(5deg);
         }
 
         .service-card h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-bottom: 1.2rem;
-            color: var(--dark);
-            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #0A1628;
         }
 
         .service-card p {
             color: #666;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
             font-size: 1rem;
-            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
         }
 
         /* Products Section */
         .products-section {
-            padding: 100px 0;
+            padding: 80px 0;
             background: white;
         }
 
         .product-card {
-            background: #F8FAFC;
-            border-radius: 15px;
-            padding: 2.5rem 2rem;
+            background: #f8f9fa;
+            padding: 30px 20px;
+            border-radius: 12px;
             text-align: center;
-            height: 100%;
+            margin-bottom: 30px;
             transition: all 0.3s;
             border: 2px solid transparent;
-            margin-bottom: 30px;
         }
 
         .product-card:hover {
             background: white;
-            border-color: var(--secondary);
-            box-shadow: 0 10px 40px rgba(0, 168, 232, 0.15);
+            border-color: #66D9EF;
+            box-shadow: 0 10px 30px rgba(0,168,232,0.15);
             transform: translateY(-5px);
         }
 
         .product-card img {
             height: 80px;
-            margin-bottom: 1.5rem;
-            transition: transform 0.3s;
-        }
-
-        .product-card:hover img {
-            transform: scale(1.1);
+            margin-bottom: 20px;
         }
 
         .product-card h5 {
-            font-weight: 600;
-            color: var(--dark);
             font-size: 1.1rem;
-            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #0A1628;
         }
 
-        /* Build DApps Section */
+        /* DApps Section */
         .dapps-section {
-            padding: 100px 0;
-            background: #F8FAFC;
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .dapps-section img {
+            max-width: 100%;
+            height: auto;
         }
 
         .dapps-section h2 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: var(--dark);
-            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
+            color: #0A1628;
         }
 
         .dapps-section p {
             font-size: 1.1rem;
             color: #666;
             line-height: 1.8;
-            margin-bottom: 1.5rem;
-            font-family: 'Open Sans', sans-serif;
         }
 
         /* Contact Section */
         .contact-section {
-            padding: 100px 0;
-            background: var(--dark);
+            padding: 80px 0;
+            background: #0A1628;
             color: white;
         }
 
@@ -381,114 +281,121 @@
         }
 
         .contact-form {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255,255,255,0.05);
+            padding: 40px;
+            border-radius: 15px;
             backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 3rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .contact-form .form-control {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+        .form-control {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
             color: white;
-            padding: 0.9rem 1.3rem;
-            border-radius: 10px;
-            font-family: 'Open Sans', sans-serif;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
 
-        .contact-form .form-control:focus {
-            background: rgba(255, 255, 255, 0.15);
-            border-color: var(--secondary);
+        .form-control:focus {
+            background: rgba(255,255,255,0.15);
+            border-color: #66D9EF;
             color: white;
-            box-shadow: 0 0 0 0.25rem rgba(102, 217, 239, 0.25);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102,217,239,0.2);
         }
 
-        .contact-form .form-control::placeholder {
-            color: rgba(255, 255, 255, 0.6);
+        .form-control::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
         }
 
         /* Footer */
-        .footer-section {
+        .footer {
             background: #050B14;
-            color: rgba(255, 255, 255, 0.7);
-            padding: 3rem 0 2rem;
+            color: rgba(255,255,255,0.7);
+            padding: 50px 0 30px;
         }
 
-        .footer-section a {
-            color: rgba(255, 255, 255, 0.7);
+        .footer h5 {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .footer a {
+            color: rgba(255,255,255,0.7);
             text-decoration: none;
             transition: color 0.3s;
-            font-family: 'Open Sans', sans-serif;
         }
 
-        .footer-section a:hover {
-            color: var(--secondary);
+        .footer a:hover {
+            color: #66D9EF;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
         }
 
         .social-links a {
             width: 45px;
             height: 45px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            margin: 0 0.5rem;
+            margin: 0 8px;
             transition: all 0.3s;
         }
 
         .social-links a:hover {
-            background: var(--gradient);
-            color: white;
+            background: linear-gradient(135deg, #00A8E8, #66D9EF);
             transform: translateY(-3px);
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             .hero-section h1 {
-                font-size: 2.3rem;
-            }
-
-            .section-title,
-            .about-section h2 {
                 font-size: 2rem;
             }
 
-            .service-card,
-            .contact-form {
-                padding: 2rem 1.5rem;
+            .section-title {
+                font-size: 2rem;
             }
 
-            .navbar .nav-link {
-                margin: 0.5rem 0;
+            .navbar-nav li {
+                margin: 5px 0;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#home">
-                    <img src="images/catchway-logo.svg" alt="Catchway">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="nav-link active" href="#home">Home</a></li>
-                    <li><a class="nav-link" href="#about">About</a></li>
-                    <li><a class="nav-link" href="#services">Services</a></li>
-                    <li><a class="nav-link" href="#products">Products</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
+            <a class="navbar-brand" href="#home">
+                <img src="images/catchway-logo.svg" alt="Catchway">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -498,20 +405,16 @@
     <section class="hero-section" id="home">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6 wow fadeInLeft">
-                    <div class="hero-content">
-                        <h1>Unfold the Future with Catchway</h1>
-                        <p class="lead">Reliable and Advanced Blockchain solutions to help you embrace the new technology and lead the way.</p>
-                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                            <a href="#contact" class="btn-hero-primary">Get Started</a>
-                            <a href="#services" class="btn-hero-outline">Our Services</a>
-                        </div>
+                <div class="col-lg-6">
+                    <h1>Unfold the Future with Catchway</h1>
+                    <p>Reliable and Advanced Blockchain solutions to help you embrace the new technology and lead the way.</p>
+                    <div>
+                        <a href="#contact" class="btn-primary">Get Started</a>
+                        <a href="#services" class="btn-outline">Our Services</a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 wow fadeInRight">
-                    <div class="hero-image text-center">
-                        <img src="catchway-website/images/header-01.png" alt="Blockchain Technology" class="img-responsive">
-                    </div>
+                <div class="col-lg-6 text-center">
+                    <img src="old-website/images/banner-04.png" alt="Blockchain Technology">
                 </div>
             </div>
         </div>
@@ -520,61 +423,55 @@
     <!-- About Section -->
     <section class="about-section" id="about">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="about-content">
-                        <h2 class="wow fadeInUp">Blockchain Development Services</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">We are a completely bootstrapped blockchain-based software development company with 4 years of track record under our belt. Catchway is an initiative to help blockchain and crypto start-ups create groundbreaking software solutions that impact the world for the better. We have a team of expert developers and tech maestros who have been in the blockchain app development services industry for many years. Our team specializes in developing enterprise blockchain solutions for clients across different industries.</p>
-                    </div>
-                </div>
-            </div>
+            <h2>Blockchain Development Services</h2>
+            <p>We are a completely bootstrapped blockchain-based software development company with 4 years of track record under our belt. Catchway is an initiative to help blockchain and crypto start-ups create groundbreaking software solutions that impact the world for the better. We have a team of expert developers and tech maestros who have been in the blockchain app development services industry for many years. Our team specializes in developing enterprise blockchain solutions for clients across different industries.</p>
         </div>
     </section>
 
     <!-- Services Section -->
     <section class="services-section" id="services">
         <div class="container">
-            <h2 class="section-title wow fadeInUp">Our Services</h2>
-            <p class="section-subtitle wow fadeInUp">We provide cutting-edge technology solutions to help your business thrive in the digital age</p>
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">We provide cutting-edge technology solutions to help your business thrive in the digital age</p>
 
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-md-6">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-laptop-code"></i>
                         </div>
                         <h3>Web Development</h3>
-                        <p>Custom websites and web applications built with modern technologies for optimal performance and user experience.</p>
+                        <p>Custom websites and web applications built with modern technologies for optimal performance.</p>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="col-lg-3 col-md-6">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
                         <h3>App Development</h3>
-                        <p>Native and cross-platform mobile applications for iOS and Android platforms with seamless functionality.</p>
+                        <p>Native and cross-platform mobile applications for iOS and Android platforms.</p>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-md-6">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-cubes"></i>
                         </div>
                         <h3>Blockchain Development</h3>
-                        <p>Smart contracts, DeFi solutions, NFT platforms, token development, and decentralized applications.</p>
+                        <p>Smart contracts, DeFi solutions, NFT platforms, and decentralized applications.</p>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="col-lg-3 col-md-6">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-brain"></i>
                         </div>
                         <h3>AI Development</h3>
-                        <p>Machine learning solutions, AI automation, intelligent systems, and data analytics for your business.</p>
+                        <p>Machine learning solutions, AI automation, and intelligent systems for your business.</p>
                     </div>
                 </div>
             </div>
@@ -584,76 +481,76 @@
     <!-- Products Section -->
     <section class="products-section" id="products">
         <div class="container">
-            <h2 class="section-title wow fadeInUp">Our Blockchain Products</h2>
-            <p class="section-subtitle wow fadeInUp">Ready-to-deploy blockchain solutions for your business needs</p>
+            <h2 class="section-title">Our Blockchain Products</h2>
+            <p class="section-subtitle">Ready-to-deploy blockchain solutions for your business needs</p>
 
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product-card">
-                        <img src="catchway-website/images/icons/benefits1-01.png" alt="ICO Dashboard">
+                        <img src="old-website/images/benefits1-01.png" alt="ICO Dashboard">
                         <h5>Automatic/Manual ICO Dashboard</h5>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.15s">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product-card">
-                        <img src="catchway-website/images/icons/benefits1-02.png" alt="DEX">
+                        <img src="old-website/images/benefits1-02.png" alt="DEX">
                         <h5>Decentralized Exchange (DEX)</h5>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product-card">
-                        <img src="catchway-website/images/icons/benefits1-03.png" alt="Token Migration">
+                        <img src="old-website/images/benefits1-03.png" alt="Token Migration">
                         <h5>Token Migration Platform</h5>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.25s">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product-card">
-                        <img src="catchway-website/images/icons/benefits1-04.png" alt="Token Bridge">
+                        <img src="old-website/images/benefits1-04.png" alt="Token Bridge">
                         <h5>Token Bridge Platform</h5>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product-card">
-                        <img src="catchway-website/images/icons/benefits1-05.png" alt="NFT">
+                        <img src="old-website/images/benefits1-05.png" alt="NFT">
                         <h5>NFT Marketplace</h5>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.35s">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product-card">
-                        <img src="catchway-website/images/icons/benefits1-06.png" alt="DeFi">
+                        <img src="old-website/images/benefits1-06.png" alt="DeFi">
                         <h5>DeFi Lending Software</h5>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product-card">
-                        <img src="catchway-website/images/icons/benefits1-07.png" alt="Wallet">
+                        <img src="old-website/images/benefits1-07.png" alt="Wallet">
                         <h5>Crypto Wallet Software</h5>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.45s">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product-card">
-                        <img src="catchway-website/images/icons/benefits1-08.png" alt="OTC">
+                        <img src="old-website/images/benefits1-08.png" alt="OTC">
                         <h5>OTC Exchange Software</h5>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.5s">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product-card">
-                        <img src="catchway-website/images/icons/benefits1-09.png" alt="Crowdfunding">
+                        <img src="old-website/images/benefits1-09.png" alt="Crowdfunding">
                         <h5>Crowdfunding Software</h5>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.55s">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product-card">
-                        <img src="catchway-website/images/icons/benefits1-10.png" alt="Penny Auction">
+                        <img src="old-website/images/benefits1-10.png" alt="Penny Auction">
                         <h5>Crypto Penny Auction Software</h5>
                     </div>
                 </div>
@@ -661,20 +558,16 @@
         </div>
     </section>
 
-    <!-- Build DApps Section -->
+    <!-- DApps Section -->
     <section class="dapps-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-sm-12 col-md-7 col-lg-7 wow fadeInLeft">
-                    <div class="dapps-img">
-                        <img src="catchway-website/images/benefits-01.png" alt="Blockchain Apps" class="img-responsive">
-                    </div>
+                <div class="col-lg-7">
+                    <img src="old-website/images/benefits-01.png" alt="Blockchain Apps">
                 </div>
-                <div class="col-sm-12 col-md-5 col-lg-5 wow fadeInRight">
-                    <div class="dapps-content">
-                        <h2>Build Decentralized Apps to stay ahead</h2>
-                        <p>Explore our Blockchain Development team to build enterprise-class Blockchain applications and start innovating today. We provide Blockchain consultation and develop enterprise Blockchain applications.</p>
-                    </div>
+                <div class="col-lg-5">
+                    <h2>Build Decentralized Apps to stay ahead</h2>
+                    <p>Explore our Blockchain Development team to build enterprise-class Blockchain applications and start innovating today. We provide Blockchain consultation and develop enterprise Blockchain applications.</p>
                 </div>
             </div>
         </div>
@@ -683,37 +576,25 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="container">
-            <h2 class="section-title wow fadeInUp">Get In Touch</h2>
-            <p class="section-subtitle wow fadeInUp">Ready to start your project? Contact us today!</p>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to start your project? Contact us today!</p>
 
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 wow fadeInUp">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
                     <div class="contact-form">
                         <form>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name" required>
-                                    </div>
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email" required>
-                                    </div>
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control" placeholder="Phone Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 text-center">
-                                    <button type="submit" class="btn-hero-primary">Send Message</button>
-                                </div>
+                            </div>
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                            <div class="text-center">
+                                <button type="submit" class="btn-primary">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -723,25 +604,25 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer-section">
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4">
+                <div class="col-lg-4">
                     <img src="images/catchway-logo.svg" alt="Catchway" style="height: 45px; margin-bottom: 20px;">
-                    <p style="margin-top: 20px;">Leading provider of Web, App, Blockchain, and AI development services.</p>
+                    <p>Leading provider of Web, App, Blockchain, and AI development services.</p>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <h5 style="color: white; margin-bottom: 20px; font-family: 'Poppins', sans-serif;">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li style="margin-bottom: 10px;"><a href="#home">Home</a></li>
-                        <li style="margin-bottom: 10px;"><a href="#about">About</a></li>
-                        <li style="margin-bottom: 10px;"><a href="#services">Services</a></li>
-                        <li style="margin-bottom: 10px;"><a href="#products">Products</a></li>
-                        <li style="margin-bottom: 10px;"><a href="#contact">Contact</a></li>
+                <div class="col-lg-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <h5 style="color: white; margin-bottom: 20px; font-family: 'Poppins', sans-serif;">Connect With Us</h5>
+                <div class="col-lg-4">
+                    <h5>Connect With Us</h5>
                     <div class="social-links">
                         <a href="https://telegram.me/Janz_dxb" target="_blank"><i class="fab fa-telegram"></i></a>
                         <a href="https://www.facebook.com/catchway.io" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -752,22 +633,19 @@
             </div>
             <hr style="border-color: rgba(255,255,255,0.1); margin: 30px 0 20px;">
             <div class="text-center">
-                <p style="margin: 0;">&copy; 2024 Catchway. All Rights Reserved.</p>
+                <p>&copy; 2024 Catchway. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Old Website JavaScript Files -->
-    <script src="catchway-website/js/assets/jquery-3.2.1.min.js"></script>
-    <script src="catchway-website/js/assets/bootstrap.min.js"></script>
-    <script src="catchway-website/js/assets/wow.min.js"></script>
+    <!-- jQuery -->
+    <script src="old-website/js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="old-website/js/bootstrap.min.js"></script>
 
     <script>
-        // Initialize WOW.js
-        new WOW().init();
-
-        // Smooth scroll for anchor links
-        $(document).ready(function(){
+        // Smooth scroll
+        $(document).ready(function() {
             $('a[href^="#"]').on('click', function(e) {
                 var target = $(this.getAttribute('href'));
                 if(target.length) {
@@ -778,31 +656,11 @@
                 }
             });
 
-            // Navbar scroll effect
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 50) {
-                    $('.navbar').css('box-shadow', '0 5px 30px rgba(0,0,0,0.15)');
-                } else {
-                    $('.navbar').css('box-shadow', '0 2px 20px rgba(0,0,0,0.08)');
-                }
-            });
-
-            // Contact form handling
+            // Contact form
             $('form').on('submit', function(e) {
                 e.preventDefault();
-                var submitBtn = $(this).find('button[type="submit"]');
-                var originalText = submitBtn.text();
-
-                submitBtn.prop('disabled', true).text('Sending...');
-
-                setTimeout(function() {
-                    submitBtn.text('✓ Message Sent!');
-                    $('form')[0].reset();
-
-                    setTimeout(function() {
-                        submitBtn.prop('disabled', false).text(originalText);
-                    }, 3000);
-                }, 1500);
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
             });
         });
     </script>

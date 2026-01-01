@@ -3,246 +3,562 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catchway is an initiative to help blockchain and crypto start-ups create groundbreaking software solutions that impact the world for the better.">
-    <meta name="keywords" content="Blockchain Development Company, Enterprise Services and Solutions Provider, Web Development, App Development, Cryptocurrency, ICO, DeFi, NFT, Smart Contracts">
-    <meta name="author" content="Catchway">
-    <title>Catchway - Blockchain Development & Web Solutions</title>
+    <meta name="description" content="Catchway - Leading provider of Web Development, App Development, Blockchain Solutions, and AI Development services.">
+    <meta name="keywords" content="Web Development, App Development, Blockchain, AI, Software Development, Digital Solutions">
+    <title>Catchway - Web, App, Blockchain & AI Development</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/png">
 
-    <!-- Bootstrap 5 CSS -->
+    <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0066FF;
+            --secondary: #00D4FF;
+            --dark: #0A1628;
+            --light: #F8FAFC;
+            --gradient: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-brand img {
+            height: 45px;
+            transition: transform 0.3s;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.05);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: #333 !important;
+            margin: 0 1rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--gradient);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 100px 0 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #667eea;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            background: white;
+            color: #667eea;
+        }
+
+        .btn-outline-light {
+            border: 2px solid white;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+
+        .btn-outline-light:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-3px);
+        }
+
+        .hero-image {
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: var(--light);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 4rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            text-align: center;
+            height: 100%;
+            transition: all 0.4s;
+            border: 1px solid #e8e8e8;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 102, 255, 0.15);
+            border-color: transparent;
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            background: var(--gradient);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            transition: transform 0.4s;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card .btn-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .service-card .btn-link:hover {
+            gap: 10px;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .product-card {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            height: 100%;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .product-card:hover {
+            background: white;
+            border-color: var(--secondary);
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            height: 80px;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .product-card h5 {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: var(--dark);
+            color: white;
+        }
+
+        .contact .section-title,
+        .contact .section-subtitle {
+            color: white;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.8rem 1.2rem;
+            border-radius: 10px;
+        }
+
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--secondary);
+            color: white;
+            box-shadow: 0 0 0 0.25rem rgba(0, 212, 255, 0.25);
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Footer */
+        .footer {
+            background: #050B14;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 3rem 0 2rem;
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: var(--secondary);
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin: 0 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--gradient);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .service-card,
+            .contact-form {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/catchway-logo.svg" alt="Catchway Logo" height="50">
+            <a class="navbar-brand" href="#">
+                <img src="images/catchway-logo.svg" alt="Catchway">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Web Development
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#web-design">Website Designing</a></li>
-                            <li><a class="dropdown-item" href="#responsive-design">Responsive Website Designing</a></li>
-                            <li><a class="dropdown-item" href="#landing-page">Landing Page Designing</a></li>
-                            <li><a class="dropdown-item" href="#ecommerce">Ecommerce Development</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#app-development">App Development</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Blockchain Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#crypto-solutions">Cryptocurrency Solutions</a></li>
-                            <li><a class="dropdown-item" href="#ico-dev">ICO Coin Development</a></li>
-                            <li><a class="dropdown-item" href="#sto-dev">STO Coin Development</a></li>
-                            <li><a class="dropdown-item" href="#erc20">ERC20 Token Development</a></li>
-                            <li><a class="dropdown-item" href="#crypto-exchange">Crypto Exchange Development</a></li>
-                            <li><a class="dropdown-item" href="#bep20">BEP20 Token Development</a></li>
-                            <li><a class="dropdown-item" href="#nft">NFT Token Development</a></li>
-                            <li><a class="dropdown-item" href="#tron">Tron Token Development</a></li>
-                            <li><a class="dropdown-item" href="#r3-corda">R3 Corda Blockchain Development</a></li>
-                            <li><a class="dropdown-item" href="#cardano">Cardano Blockchain Development</a></li>
-                            <li><a class="dropdown-item" href="#dashboard">Dashboard</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero" id="home">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="hero-image">
-                        <img src="images/header-01.png" alt="Blockchain Technology" class="img-fluid">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1>Unfold the Future with Catchway</h1>
+                        <p>Leading provider of Web Development, App Development, Blockchain Solutions, and AI Development services.</p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#contact" class="btn btn-primary">Get Started</a>
+                            <a href="#services" class="btn btn-outline-light">Our Services</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="hero-content">
-                        <h1 class="display-4 fw-bold mb-4">Unfold the future with Catchway</h1>
-                        <p class="lead mb-4">Reliable and Advanced Blockchain solutions to help you embrace the new technology and lead the way.</p>
-                        <p class="text-uppercase fw-semibold mb-3">JOIN OUR COMMUNITY</p>
-                        <div class="social-links mb-4">
-                            <a href="https://telegram.me/Janz_dxb" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
-                            <a href="https://www.facebook.com/catchway.io" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/catchway.io/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/catchway-web-solutions-pvt-ltd/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        </div>
-
-                        <!-- Contact Form -->
-                        <div class="contact-form-hero">
-                            <h3 class="h5 mb-3">Get in touch with us</h3>
-                            <form id="contactForm">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Your Name" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="tel" class="form-control" placeholder="Mobile" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="email" class="form-control" placeholder="E-mail Address" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="submit" class="btn btn-primary btn-lg w-100">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image text-center mt-5 mt-lg-0">
+                        <img src="images/header-01.png" alt="Technology" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blockchain Products Section -->
-    <section class="products-section py-5">
+    <!-- Services Section -->
+    <section class="services" id="services">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold">Our Blockchain Products</h2>
-            </div>
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <p class="section-subtitle" data-aos="fade-up">We provide cutting-edge technology solutions to help your business thrive in the digital age</p>
+
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <div class="product-icon mb-3">
-                            <img src="images/benefits1-01.png" alt="ICO Dashboard" class="img-fluid">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
                         </div>
-                        <h5>Automatic/Manual ICO Dashboard</h5>
+                        <h3>Web Development</h3>
+                        <p>Custom websites and web applications built with modern technologies for optimal performance.</p>
+                        <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <div class="product-icon mb-3">
-                            <img src="images/benefits1-02.png" alt="DEX" class="img-fluid">
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <h5>Decentralized Exchange (DEX)</h5>
+                        <h3>App Development</h3>
+                        <p>Native and cross-platform mobile applications for iOS and Android platforms.</p>
+                        <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <div class="product-icon mb-3">
-                            <img src="images/benefits1-03.png" alt="Token Migration" class="img-fluid">
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cubes"></i>
                         </div>
+                        <h3>Blockchain Development</h3>
+                        <p>Smart contracts, DeFi solutions, NFT platforms, and decentralized applications.</p>
+                        <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI Development</h3>
+                        <p>Machine learning, AI automation, and intelligent systems for your business needs.</p>
+                        <a href="#" class="btn-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Blockchain Products</h2>
+            <p class="section-subtitle" data-aos="fade-up">Ready-to-deploy blockchain solutions for your business</p>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="product-card">
+                        <img src="images/benefits1-01.png" alt="ICO Dashboard">
+                        <h5>ICO Dashboard</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="product-card">
+                        <img src="images/benefits1-02.png" alt="DEX">
+                        <h5>Decentralized Exchange</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="product-card">
+                        <img src="images/benefits1-03.png" alt="Token Migration">
                         <h5>Token Migration Platform</h5>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <div class="product-icon mb-3">
-                            <img src="images/benefits1-04.png" alt="Token Bridge" class="img-fluid">
-                        </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="product-card">
+                        <img src="images/benefits1-04.png" alt="Token Bridge">
                         <h5>Token Bridge Platform</h5>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <div class="product-icon mb-3">
-                            <img src="images/benefits1-05.png" alt="NFT Marketplace" class="img-fluid">
-                        </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="product-card">
+                        <img src="images/benefits1-05.png" alt="NFT">
                         <h5>NFT Marketplace</h5>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <div class="product-icon mb-3">
-                            <img src="images/benefits1-06.png" alt="DeFi Lending" class="img-fluid">
-                        </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="product-card">
+                        <img src="images/benefits1-06.png" alt="DeFi">
                         <h5>DeFi Lending Software</h5>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <div class="product-icon mb-3">
-                            <img src="images/benefits1-07.png" alt="Crypto Wallet" class="img-fluid">
-                        </div>
-                        <h5>Crypto Wallet Software</h5>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <div class="product-icon mb-3">
-                            <img src="images/benefits1-08.png" alt="OTC Exchange" class="img-fluid">
-                        </div>
-                        <h5>OTC Exchange Software</h5>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <div class="product-icon mb-3">
-                            <img src="images/benefits1-09.png" alt="Crowdfunding" class="img-fluid">
-                        </div>
-                        <h5>Crowdfunding Software</h5>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="product-card text-center">
-                        <div class="product-icon mb-3">
-                            <img src="images/benefits1-10.png" alt="Penny Auction" class="img-fluid">
-                        </div>
-                        <h5>Crypto Penny Auction Software</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold mb-4">About Catchway</h2>
-                    <p class="lead">Catchway is an initiative to help blockchain and crypto start-ups create groundbreaking software solutions that impact the world for the better.</p>
-                    <p>We specialize in blockchain development, web development, and mobile app development services. Our team of experts delivers cutting-edge solutions that drive innovation and business growth.</p>
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="product-card">
+                        <img src="images/benefits1-07.png" alt="Wallet">
+                        <h5>Crypto Wallet</h5>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <h3 class="display-4 fw-bold text-primary">100+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3 class="display-4 fw-bold text-primary">50+</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3 class="display-4 fw-bold text-primary">10+</h3>
-                            <p>Years Experience</p>
-                        </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="product-card">
+                        <img src="images/benefits1-08.png" alt="OTC">
+                        <h5>OTC Exchange</h5>
                     </div>
                 </div>
             </div>
@@ -250,35 +566,30 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section py-5">
+    <section class="contact" id="contact">
         <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up">Ready to start your project? Contact us today!</p>
+
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="text-center mb-5">
-                        <h2 class="display-5 fw-bold">Contact Us</h2>
-                        <p class="lead">Have a project in mind? Let's discuss how we can help</p>
-                    </div>
-                    <div class="contact-form-wrapper">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="contact-form">
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" required>
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label">Phone Number</label>
-                                    <input type="tel" class="form-control" required>
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label">Email Address</label>
-                                    <input type="email" class="form-control" required>
+                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label">Message</label>
-                                    <textarea class="form-control" rows="5" required></textarea>
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
                                 </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
                                 </div>
                             </div>
                         </form>
@@ -289,55 +600,72 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer py-5 bg-dark text-white">
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <img src="images/catchway-logo.svg" alt="Catchway Logo" height="50" class="mb-3">
-                    <p>Leading blockchain, web, and app development solutions provider.</p>
+                    <img src="images/catchway-logo.svg" alt="Catchway" height="40" class="mb-3">
+                    <p class="mt-3">Leading provider of Web, App, Blockchain, and AI development services.</p>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <h5>Quick Links</h5>
+                    <h5 class="text-white mb-3">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50">Home</a></li>
-                        <li><a href="#about" class="text-white-50">About Us</a></li>
-                        <li><a href="#contact" class="text-white-50">Contact</a></li>
+                        <li class="mb-2"><a href="#home">Home</a></li>
+                        <li class="mb-2"><a href="#services">Services</a></li>
+                        <li class="mb-2"><a href="#products">Products</a></li>
+                        <li class="mb-2"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <h5>Follow Us</h5>
+                    <h5 class="text-white mb-3">Connect With Us</h5>
                     <div class="social-links">
-                        <a href="https://telegram.me/Janz_dxb" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
-                        <a href="https://www.facebook.com/catchway.io" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/catchway.io/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/catchway-web-solutions-pvt-ltd/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://telegram.me/Janz_dxb" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.facebook.com/catchway.io" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/catchway.io/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/catchway-web-solutions-pvt-ltd/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
-            <hr class="bg-white-50">
+            <hr class="border-secondary mt-4 mb-3">
             <div class="text-center">
-                <p class="mb-0">&copy; 2024 Catchway. All rights reserved.</p>
+                <p class="mb-0">&copy; 2024 Catchway. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating Contact Buttons -->
-    <div class="floating-buttons">
-        <a href="https://api.whatsapp.com/send?phone=971585048744" target="_blank" class="float-btn whatsapp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="tel:+971585048744" class="float-btn phone">
-            <i class="fas fa-phone"></i>
-        </a>
-        <a href="https://telegram.me/Janz_dxb" target="_blank" class="float-btn telegram">
-            <i class="fab fa-telegram"></i>
-        </a>
-    </div>
-
-    <!-- Bootstrap 5 JS Bundle -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 5px 30px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.05)';
+            }
+        });
+    </script>
 </body>
 </html>

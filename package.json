@@ -4,8 +4,7 @@
   "description": "Catchway - Blockchain, Web & App Development Solutions",
   "main": "index.html",
   "scripts": {
-    "start": "serve .",
-    "build": "echo 'Static HTML - No build needed'"
+    "build": "mkdir -p public && cp -r *.html css js images fonts public/ 2>/dev/null || true"
   },
   "keywords": [
     "blockchain",

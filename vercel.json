@@ -1,4 +1,33 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "src": "**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.{png,jpg,jpeg,gif,svg,ico,webp}",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1.html",
+      "status": 200
+    }
+  ],
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [

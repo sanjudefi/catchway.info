@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Blockchain Development">
+    <meta name="keywords" content="Blockchain Development Company : Enterprise Services and Solutions Provider.">
+    <meta name="author" content="Catchway">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catchway Blockchain Development</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Goole Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/assets/bootstrap.min.css">
+    <link rel="stylesheet" href="css/assets/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/assets/magnific-popup.css">
+    <link rel="stylesheet" href="css/assets/jquery.countdown.css"> 
+    <link rel="stylesheet" href="css/assets/animate.css">
+    <link rel="stylesheet" href="css/assets/owl.carousel.css">
+    <link rel="stylesheet" href="css/assets/owl.theme.css">
+    <!-- preloader css-->    
+    <link rel="stylesheet" href="css/assets/preloader.css">
+    <!-- main style-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cryptonio.css">
+    <link rel="stylesheet" href="css/responsive.css">
+                            
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<script>
+function showPath() {
+   // alert("hi");
+const queryString = window.location.href;
+
+const urlParams = new URLSearchParams(queryString);
+
+var gclid = queryString;
+//alert(gclid);
+console.log(gclid);
+
+localStorage.setItem('gid', gclid);
+
+var ggid = localStorage.getItem('gid');
+ document.getElementById("ggid").value=localStorage.getItem('gid');
+}
+</script>
+
+<script>
+
+    </script>
+    
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var chat_id = document.getElementById("chatida").value;
+        var token = document.getElementById("tokena").value;
+        var g = localStorage.getItem('gid');
+        function getloc() {
+            $.getJSON("https://ipinfo.io", function (data) {
+                var info = "City: " + data.city + ", \n County: " + data.country + ",\n IP: " + data.ip + ", \nLocation: " + data.loc + ", \n Organisation: " + data.org + ",  \n Postal Code: " + data.postal + ",\n Region: " + data.region;
+
+                var lat = lat;
+                var long = long;
+
+                var message = "Location:\n " + info + "\n URL: " + g;
+
+                sendTelegramMessage(chat_id, token, message);
+            });
+        }
+
+        function sendTelegramMessage(chatId, botToken, message) {
+            var url = "https://api.telegram.org/bot" + botToken + "/sendMessage";
+
+            $.ajax({
+                url: url,
+                method: "POST",
+                data: {
+                    chat_id: chatId,
+                    text: message
+                },
+                success: function (response) {
+                    console.log("Message sent successfully!");
+                },
+                error: function (error) {
+                    console.error("Error sending message:", error);
+                }
+            });
+        }
+
+        getloc();
+    });
+</script>
+</head>
+
+<body class="body_01" onload="showPath(),sendmessagea();">
+
+<input type="hidden" id="rlat" value="">
+    <input type="hidden" id="rlong" value="">
+    <p id="info" style="display:none"> DUBAI </p>
+    <input type="hidden" id="chatida" value="-283612871">
+    <input type="hidden" id="tokena" value="669553219:AAFwkHdnbJlpM7tjqETT68rpRyZsIFadybY">
+        <input type="hidden" id="ggid" value="">
+<!-- Preloader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+
+<header id="header-06" class="header">
+<!-- START NAVBAR -->
+<nav class="navbar navbar-expand-md navbar-light bg-faded cripto_nav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="https://www.catchway.com"><img src="images/catchway block new logo.svg" class="logo-img" alt="logo"></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a data-scroll href="index" class="nav-link active">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a data-scroll href="#" class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Web Development</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="website-designing-hyderabad">Website Designing</a>
+                            <a class="dropdown-item" href="responsive-website-designing">Responsive Website Designing</a>
+                            <a class="dropdown-item" href="landing-page-designing">Landing Page Designing</a>
+                            <a class="dropdown-item" href="ecommerce-development">Ecommerce Development</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a data-scroll href="mobile-app-development" class="nav-link">App Development</a></li>
+                    <li class="nav-item dropdown">
+                        <a data-scroll href="#" class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blockchain Services</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="service-cryptocurrency-solutions">Cryptocurrency Solutions </a>
+                            <a class="dropdown-item" href="service-ico-coin-development">ICO Coin Development</a>
+                            <a class="dropdown-item" href="service-sto-development-service">STO Coin Development</a>
+                            <a class="dropdown-item" href="service-erc-20-token-development">ERC20 Token Development</a>
+                            <a class="dropdown-item" href="service-crypto-exchange-development">Crypto Exchange Development</a>
+                            <a class="dropdown-item" href="service-bep-20-token-development">BEP20 Token Development</a>
+                            <a class="dropdown-item" href="service-nft-token-development">NFT Token Development</a>
+                            <a class="dropdown-item" href="service-tron-token-development">Tron Token Development</a>
+                            <a class="dropdown-item" href="service-r3-corda-blockchain-development">R3 Corda Blockchain Development</a>
+                            <a class="dropdown-item" href="service-cardano-blockchain-development">Cardano Blockchain Development</a>
+                            <a class="dropdown-item" href="#">Dashboard</a>
+                        </div>
+                    </li>
+                    <!--li class="nav-item">
+                        <a data-scroll href="products" class="nav-link">Products</a>
+                    </li-->
+                    <li class="nav-item"><a data-scroll href="#about_cryptonic_01" class="nav-link">About Us</a></li>
+                    <!--<li class="nav-item">-->
+                    <!--    <a data-scroll href="#" class="nav-link">Enterprise</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item">-->
+                    <!--    <a data-scroll href="industries" class="nav-link">Industries</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item dropdown">-->
+                    <!--    <a data-scroll href="#" class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NFT</a>-->
+                    <!--    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">-->
+                    <!--        <a class="dropdown-item" href="service-nft-token-development">NFT Token Development</a>-->
+                    <!--        <a class="dropdown-item" href="#">NFT Marketplace Development</a>-->
+                    <!--        <a class="dropdown-item" href="#">NFT Gaming Platform Development</a>-->
+                    <!--    </div>-->
+                    <!--</li>-->
+                    <li class="nav-item">
+                        <a data-scroll href="contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--div class="language">
+                <a href="#" class="token active">Sign Up</a>
+                <a href="#" class="token">Login</a>
+            </div-->
+        </div>
+    </nav><!-- END NAVBAR -->
+</header>
+
+<section id="about_cryptonic_01">
+    <div class="container">
+        <div class="row intro-wrapper">           
+            <div class="col-sm-12  col-md-12 col-lg-12 intro-text-wrapper">
+                <div class="intro-text text-center">
+                    <h1>Tron Token Development</h1>
+                    <p>Tron token development is your best choice if you want all the functionalities of Ethereum, without the outrageous gas fees.</p>
+                    <!-- <a href="#" class="btn btn-default btn-default-style">Join our Whitelist</a> -->
+                </div>
+            </div> 
+        </div>    
+    </div>
+</section>
+
+<section id="" >
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-12 col-lg-12 benefits-single-item text-center">
+                <h2>Types of Tron Token Development</h2><br><br>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/feature-11.png" width="60">
+                    <p>TRC10</p>
+                </div>
+            </div> 
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/feature-11.png" width="60">
+                    <p>TRC20</p>
+                </div>
+            </div> 
+            <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/feature-11.png" width="60">
+                    <p>TRC721</p>
+                </div>
+            </div> 
+            
+        </div>    
+    </div>
+</section>
+<br><br>
+
+<section id="benefit-04">
+    <div class="container">
+        <div class="row">        
+            <div class="col-sm-12">
+                <div class="sub-title">
+                    <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInUp;">What we offer ?</h2>
+                </div>
+            </div>
+        </div>      
+        <div class="row">        
+            
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/trc-icon1.png" width="60">
+                    <p>Fast Deployment </p>
+                </div>
+            </div>       
+            
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/trc-icon2.png" width="60">
+                    <p>Interoperability</p>
+                </div>
+            </div>       
+            
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/trc-icon3.png" width="60">
+                    <p>Non Fungible Tokens</p>
+                </div>
+            </div>       
+            
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
+                <div class="icon-box">
+                    <img src="images/icons/trc-icon4.png" width="60">
+                    <p>Solidity Smart Contracts</p>
+                </div>
+            </div>  
+
+        </div>  
+    </div>
+</section>
+
+<br><br><br>
+
+<footer id="footer-04" class="footer">
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="col-sd-12 col-md-5 col-lg-4">
+                <ul class="social-items list-unstyled">
+                    <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInUp;"><a href="https://www.facebook.com/catchway.io" target="_blank"><i class="fab fa-facebook-f fb-icon"></i></a></li>
+                    <li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeInUp;"><a href="https://www.instagram.com/catchway.io/" target="_blank"><i class="fab fa-instagram instagram-icon"></i></a></li>                    
+                    <!--<li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.4s; animation-name: fadeInUp;"><a href="#"><i class="fab fa-twitter twitt-icon"></i></a></li>-->
+                    <!--li class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeInUp;"><a href="#"><i class="fab fa-youtube youtube-icon"></i></a></li-->
+                </ul>
+                <br><br>
+                <div class="address-single wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                    <i class="fa fa-envelope fb-icon"></i>
+                    <div class="address_wrapper">
+                        <h4>E-Mail</h4>
+                        <span>info@catchway.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sd-12 col-md-6 col-lg-6">
+                <div class="address_wrapper">
+    <div class="sub-title" style="margin: 0px auto 20px;">
+        <h2 class="wow fadeInUp text-left" data-wow-duration="2s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInUp;">Get in touch with us</h2>
+    </div> 
+</div>
+<div class="contact_form form-input">
+    
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="row">
+            <div class="col-12 col-sm-6 form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                <input type="text" class="form-control" name="name" required placeholder="Your Name">
+            </div>
+            <div class="col-12 col-sm-6 form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                <input type="text" class="form-control" name="phone" required placeholder="Mobile">
+            </div>
+            <div class="col-12 col-sm-12 form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+                <input type="email" class="form-control" name="email" required placeholder="E-mail Address">
+            </div>
+            <div class="col-12 col-sm-12 form-group">
+                <div class="submit-btn wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                    <button type="submit" class="btn btn-primary col-sm-12">
+                        Submit
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+       
+</div>
+                <!--div class="address-single wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <i class="fa fa-phone fb-icon"></i>
+                    <div class="address_wrapper">
+                        <h4>Call Us</h4>
+                        <span>+971 5850 487 44</span>
+                    </div>
+                </div-->
+            </div>                                          
+        </div>
+        <div class="row footer-btm-wrapper">
+            <div class="col-sm-6 col-md-6 col-lg-10 footer-single-col">
+                <h3 class="subtitle_1">&nbsp;<img src="images/catchway block new logo.svg" width="180" alt=""></h3>
+                <p>Catchway Blockchain is a leading Blockchain Development Company that has a team of expert Blockchain developers who have tremendous knowledge and experience with Solidity, Hyperledger, Tron, Corda, Hedera development, and all the branches of Blockchain Technology.</p>
+                <br>
+                <p class="text-light">JOIN OUR COMMUNITY</p>
+                <ul class="banner-social">
+    <li><a href="https://telegram.me/Janz_dxb" target="_blank"><i class="fab fa-telegram"></i></a></li>
+    <li><a href="https://www.facebook.com/catchway.io" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    <!--<li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>-->
+    <li><a href="https://www.instagram.com/catchway.io/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://www.linkedin.com/company/catchway-web-solutions-pvt-ltd/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+    <!--li><a href="https://api.whatsapp.com/send?phone=971585048744" target="_blank"><i class="fab fa-whatsapp"></i></a></li-->
+</ul>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 footer-single-col">
+                <h3 class="subtitle_1">Company</h3> 
+                <ul class="list-unstyled">
+                    <li><a href="#">About Company</a></li>
+                    <li><a href="products">Products</a></li>
+                    <li><a href="terms-and-conditions">Terms & Conditions</a></li>
+                    <li><a href="privacy-policy">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!--div class="col-sm-6 col-md-6 col-lg-2 footer-single-col">
+                <h3 class="subtitle_1">Help Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#">We Work On</a></li>
+                    <li><a href="#">Showcase</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Features</a></li>
+                </ul>
+            </div-->
+        </div>
+
+        <div class="copyright">
+            <p> Copyright © 2023, Catchway Blockchain</p>            
+        </div>         
+    </div>      
+</footer>
+
+<!--<a href="https://api.whatsapp.com/send?phone=358417945831" target="_blank" class="foot-whatsapp"><img src="images/icon_whatsapp-1.png" /></a>-->
+<!--<a href="tel:358417945831" class="foot-call"><img src="images/icon_call-1.png" /></a>-->
+<!--<a href="https://telegram.me/catchway" target="_blank" class="foot-telegram"><img src="images/icon_telegram-1.png" /></a>-->
+
+    <a href="https://api.whatsapp.com/send?phone=7304675684" target="_blank" class="foot-whatsapp1"><img src="services/images/icon_whatsapp-1.png" /></a>
+    <!--a href="https://api.whatsapp.com/send?phone=919391142967" target="_blank" class="foot-whatsapp1"><img src="services/images/icon_whatsapp-1.png" /></a-->
+        <a href="https://t.me/sanjumuddam" target="_blank" class="foot-telegram"><img src="images/icon_telegram-1.png"></a>
+
+    <a href="tel:+917304675684" class="foot-call"><img src="services/images/icon_call-1.png" /></a>
+    <style>
+        .foot-telegram {
+            position: fixed;
+            bottom: 200px;
+            left: -12px;
+            z-index: 999;
+        }
+        .foot-whatsapp1 {
+            position: fixed;
+            bottom: 300px;
+            left: -12px;
+            z-index: 999;
+        }
+        .foot-call {
+            position: fixed;
+            bottom: 250px;
+            left: -12px;
+            z-index: 999;
+        }
+        .foot-telegram img {
+            height: 50px;
+            border-radius: 0 0px 10px 0;
+        }
+        .foot-call img {
+            height: 50px;
+            border-radius: 0 0px 0px 0; 
+        }
+        .foot-whatsapp1 img {
+            height: 50px;
+            border-radius: 0 0px 0px 0; 
+        }
+        .foot-call:hover {
+            left: 0px;
+        }
+        .foot-whatsapp1:hover {
+            left: 0px;
+        }
+        .foot-telegram:hover {
+            left: 0px;
+        }
+    </style>
+
+    <!-- JavaScript Files-->
+    <script src="js/assets/jquery-3.2.1.min.js"></script>
+    <script src="js/assets/popper.min.js"></script>
+    <script src="js/assets/bootstrap.min.js"></script>
+    <script src="js/assets/jquery.sticky.js"></script>
+    <script src="js/assets/isotope.pkgd.min.js"></script>
+    <script src="js/assets/jquery.magnific-popup.min.js"></script>
+    <script src="js/assets/owl.carousel.min.js"></script>     
+    <script src="js/assets/smooth-scroll.js"></script>    
+    <script src="js/assets/jquery.countdown.js"></script>
+    <script src="js/assets/wow.min.js"></script>  
+    <script src="js/custom.js"></script> 
+    <script src="https://kit.fontawesome.com/5c6090995e.js" crossorigin="anonymous"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/609395f9b1d5182476b62597/1f5083mfl';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89536754-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89536754-1');
+</script>
+
+</body>
+
+</html>

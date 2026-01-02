@@ -5,3 +5,7 @@ catchway-website
 .git
 .gitignore
 node_modules
+*.py
+*.md
+README*
+DEPLOYMENT*
